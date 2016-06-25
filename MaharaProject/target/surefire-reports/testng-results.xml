@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SmokeTests.Test1" duration-ms="14411" started-at="2016-06-25T20:59:33Z" finished-at="2016-06-25T20:59:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="14411" started-at="2016-06-25T20:59:33Z" finished-at="2016-06-25T20:59:48Z">
+      <class name="SmokeTests.Test1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmokeTests.Test1@67b64c45]" name="setup" is-config="true" duration-ms="11863" started-at="2016-06-25T13:59:33Z" finished-at="2016-06-25T13:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAllLinks()[pri:0, instance:SmokeTests.Test1@67b64c45]" name="testAllLinks" duration-ms="2532" started-at="2016-06-25T13:59:45Z" finished-at="2016-06-25T13:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllLinks -->
+      </class> <!-- SmokeTests.Test1 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- SmokeTests.Test1 -->
+</testng-results>
