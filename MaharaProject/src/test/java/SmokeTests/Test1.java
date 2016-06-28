@@ -43,7 +43,7 @@ public class Test1 {
 			if(LinksOnPage.get(i).getText().length()>0)
 			{
 			//	flag =1;
-			System.out.println("Page Link number "+i+" is : "+LinksOnPage.get(i).getText());
+			System.out.println("Page1 Link number "+i+" is : "+LinksOnPage.get(i).getText());
 		    //mainWindowHandle = driver.getWindowHandle();
 			//LinksOnPage.get(i).click();
 			//for(String windowhandle:driver.getWindowHandles())
