@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11178" started-at="2016-06-25T20:54:25Z" finished-at="2016-06-25T20:54:36Z">
+  <suite name="Default suite" duration-ms="5390" started-at="2016-07-10T01:01:21Z" finished-at="2016-07-10T01:01:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11178" started-at="2016-06-25T20:54:25Z" finished-at="2016-06-25T20:54:36Z">
-      <class name="SmokeTests.Test1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SmokeTests.Test1@7907ec20]" name="setup" is-config="true" duration-ms="6984" started-at="2016-06-25T13:54:25Z" finished-at="2016-06-25T13:54:32Z">
+    <test name="Default test" duration-ms="5390" started-at="2016-07-10T01:01:21Z" finished-at="2016-07-10T01:01:26Z">
+      <class name="SmokeTests.ATest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmokeTests.ATest@7907ec20]" name="setup" is-config="true" duration-ms="5370" started-at="2016-07-09T18:01:21Z" finished-at="2016-07-09T18:01:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAllLinks()[pri:0, instance:SmokeTests.Test1@7907ec20]" name="testAllLinks" duration-ms="4179" started-at="2016-06-25T13:54:32Z" finished-at="2016-06-25T13:54:36Z">
+        <test-method status="PASS" signature="testAllLinks()[pri:0, instance:SmokeTests.ATest@7907ec20]" name="testAllLinks" duration-ms="4" started-at="2016-07-09T18:01:26Z" finished-at="2016-07-09T18:01:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAllLinks -->
-      </class> <!-- SmokeTests.Test1 -->
+      </class> <!-- SmokeTests.ATest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

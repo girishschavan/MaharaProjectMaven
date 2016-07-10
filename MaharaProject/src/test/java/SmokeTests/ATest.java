@@ -1,28 +1,37 @@
 package SmokeTests;
 
+import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Test1 {
+public class ATest {
 	WebDriver driver;
 	
 	@BeforeTest
 	public void setup()
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Girish\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://www.seleniumframework.com/Practiceform/");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions");
+		driver = new ChromeDriver(options);
+		driver.get("http://www.google.org");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
@@ -31,7 +40,20 @@ public class Test1 {
 	@Test
 	public void testAllLinks() throws InterruptedException
 	{
-		//int flag = 0;
+
+		
+	System.out.println(driver.getCurrentUrl());
+		
+			
+	
+		//AssertJUnit.assertEquals("Welcome to the Mahara Demo Site",driver.findElement(By.xpath("/html/body/div/div/div/main/div/div/h1")).getText());
+		
+		
+		
+		
+		
+		
+		/*//int flag = 0;
 		String mainWindowHandle=driver.getWindowHandle();
 		//String nextWindow="nowiwndow";
 		System.out.println("main window is "+mainWindowHandle);
@@ -55,7 +77,7 @@ public class Test1 {
 			//}
 			
 			
-		/*	if (mainWindowHandle.equals(nextWindow))
+			if (mainWindowHandle.equals(nextWindow))
 			{
 				driver.getTitle();
 				System.out.println("new title is "+driver.getTitle());
@@ -108,7 +130,7 @@ public class Test1 {
 			catch(Exception e)
 			{
 			e.printStackTrace();	
-			}*/
+			}
 		}
 		
 		
@@ -116,5 +138,5 @@ public class Test1 {
 	}
 	Assert.assertTrue(false);
 //assertTrue("asbc","asd");
-}
+*/}
 }
