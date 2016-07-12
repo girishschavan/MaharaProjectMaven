@@ -31,7 +31,7 @@ public class ATest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions");
 		driver = new ChromeDriver(options);
-		driver.get("http://www.google.org");
+		driver.get("http://www.google.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
